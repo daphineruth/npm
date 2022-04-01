@@ -1,3 +1,3 @@
 
-import addToCart from './shoppingCart.js';
+import {addToCart } from './shoppingCart.js';
 console.log('Importing module');
