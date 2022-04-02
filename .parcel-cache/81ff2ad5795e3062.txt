@@ -13,7 +13,7 @@
 85D:\projects\Javascript\Modern JS-modules\node_modules\@parcel\source-map\dist\node.js132933819769469575 0
 60D:\projects\Javascript\Modern JS-modules\node_modules\dotenv132933819764892199 1
 83D:\projects\Javascript\Modern JS-modules\node_modules\svgo\plugins\removeDoctype.js132933819784441030 0
-53D:\projects\Javascript\Modern JS-modules\package.json132933826382207635 0
+53D:\projects\Javascript\Modern JS-modules\package.json132933826764414869 0
 99D:\projects\Javascript\Modern JS-modules\node_modules\caniuse-lite\data\features\input-minlength.js132933819016811602 0
 75D:\projects\Javascript\Modern JS-modules\node_modules\node-gyp-build\bin.js132933819759425324 0
 116D:\projects\Javascript\Modern JS-modules\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\010-introduction.md132933819786409880 0
@@ -21,7 +21,7 @@
 71D:\projects\Javascript\Modern JS-modules\node_modules\lodash-es\next.js132933618074246974 0
 83D:\projects\Javascript\Modern JS-modules\node_modules\css-select\lib\index.d.ts.map132933819775686020 0
 80D:\projects\Javascript\Modern JS-modules\node_modules\mdn-data\css\syntaxes.json132933819777245127 0
-51D:\projects\Javascript\Modern JS-modules\.gitignore132933768389644249 0
+51D:\projects\Javascript\Modern JS-modules\.gitignore132933891494251267 0
 85D:\projects\Javascript\Modern JS-modules\node_modules\caniuse-lite\data\regions\LK.js132933819019460086 0
 53D:\projects\Javascript\Modern JS-modules\node_modules132933819842457795 1
 84D:\projects\Javascript\Modern JS-modules\node_modules\type-fest\ts41\kebab-case.d.ts132933819775526116 0
@@ -4821,5 +4821,5 @@
 65D:\projects\Javascript\Modern JS-modules\node_modules\.bin\terser132933819806908142 0
 69D:\projects\Javascript\Modern JS-modules\node_modules\.bin\terser.ps1132933819806898152 0
 67D:\projects\Javascript\Modern JS-modules\dist\index.c8aaea1e.js.map132933826505416786 0
-56D:\projects\Javascript\Modern JS-modules\dist\index.html132933826505186915 0
+56D:\projects\Javascript\Modern JS-modules\dist\index.html132933941798604539 0
 79D:\projects\Javascript\Modern JS-modules\dist\Modern JS-modules.3464ddca.js.map132933789449062531 0
