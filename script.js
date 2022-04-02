@@ -51,7 +51,7 @@ const getLastPost = async function () {
     const addToCart = function (product, quantity) {
       cart.push({ product, quantity });
       console.log(
-        `${quantity} ${product} added to cart`);
+        `${quantity} ${product} added to cart (shipping cost is ${shippingCost})`);
       };
 
       const orderStock = function (product, quantity) {
@@ -66,3 +66,8 @@ const getLastPost = async function () {
 
     }
 }) ();
+
+ShoppingCart2.addToCart('apple', 4);
+ShoppingCart2.addToCart('oranges',3);
+console.log(ShoppingCart2);
+console.log(ShoppingCart2.shippingCost);
