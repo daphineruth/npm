@@ -53,4 +53,16 @@ const getLastPost = async function () {
       console.log(
         `${quantity} ${product} added to cart`);
       };
-    });
+
+      const orderStock = function (product, quantity) {
+        console.log(`${quantity} ${product} ordered from supplier`);
+      };
+    
+    return {
+        addToCart,
+        cart,
+        totalPrice,
+        totalQuantity,
+
+    }
+}) ();
