@@ -1,12 +1,12 @@
 var budget = [
-  { value: 250, description: 'Sold old TV 📺', user: 'jonas' },
-  { value: -45, description: 'Groceries 🥑', user: 'jonas' },
-  { value: 3500, description: 'Monthly salary 👩‍💻', user: 'jonas' },
-  { value: 300, description: 'Freelancing 👩‍💻', user: 'jonas' },
-  { value: -1100, description: 'New iPhone 📱', user: 'jonas' },
+  { value: 250, description: 'Sold old TV 📺', user: 'daphne' },
+ {value: -45, description: 'Groceries 🥑', user: 'daphne' },
+  { value: 3500, description: 'Monthly salary 👩‍💻', user: 'daphne' },
+  { value: 300, description: 'Freelancing 👩‍💻', user: 'daphne' },
+  { value: -1100, description: 'New iPhone 📱', user: 'daphne' },
   { value: -20, description: 'Candy 🍭', user: 'matilda' },
   { value: -125, description: 'Toys 🚂', user: 'matilda' },
-  { value: -1800, description: 'New Laptop 💻', user: 'jonas' },
+  { value: -1800, description: 'New Laptop 💻', user: 'daphne' },
 ];
 
 var limits = {
