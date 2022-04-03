@@ -9,7 +9,7 @@
   { value: -1800, description: 'New Laptop 💻', user: 'daphne' },
 ];
 
-const limits = {
+const spendingLimits = {
   daphne: 1500,
   matilda: 100,
 };
@@ -19,7 +19,7 @@ const addExpense = function (value, description, user) {
   user = user.toLowerCase();
 
   let  lim;
-  if (limits[user]) {
+  if (spendingLimits [user]) {
     lim = limits[user];
   } else {
     lim = 0;
@@ -34,21 +34,21 @@ addExpense(100, 'Going to movies 🍿', 'Matilda');
 addExpense(200, 'Stuff', 'Jay');
 console.log(budget);
 
-const check = function () {
-  for (var el of budget) {
-    var lim;
+const checkExpenses = function () {
+  for (var entry of budget) {
+    let lim;
     if (limits[el.user]) {
       lim = limits[el.user];
     } else {
       lim = 0;
     }
 
-    if (el.value < -lim) {
-      el.flag = 'limit';
+    if (entry.value < -lim) {
+      entry.flag = 'limit';
     }
   }
 };
-check();
+checkExpenses();
 
 console.log(budget);
 
@@ -62,4 +62,5 @@ var bigExpenses = function (limit) {
   output = output.slice(0, -2); // Remove last '/ '
   console.log(output);
 };
+
 bigExpenses(1000);
