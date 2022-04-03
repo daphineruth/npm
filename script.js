@@ -129,3 +129,5 @@ class Person {
     console.log(`${this.#greeting}, ${this.name}`);
   }
 }
+import 'core-js/stable';
+
