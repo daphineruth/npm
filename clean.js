@@ -40,9 +40,9 @@ const addExpense = function (
     budget.push({ value: -value, description ,user});
   }
 };
-   addExpense(10, 'Pizza 🍕');
-   addExpense(100, 'Going to movies 🍿', 'Matilda');
-   addExpense(200, 'Stuff', 'Jay');
+   addExpense(budget, spendingLimits, 10, 'Pizza 🍕');
+   addExpense( budget, spendingLimits, 100, 'Going to movies 🍿', 'Matilda');
+   addExpense(budget, spendingLimits, 200, 'Stuff', 'Jay');
 
 
 const checkExpenses = function () {
