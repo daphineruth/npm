@@ -31,7 +31,6 @@ const addExpense = function (value, description, user) {
    addExpense(100, 'Going to movies 🍿', 'Matilda');
    addExpense(200, 'Stuff', 'Jay');
 
-console.log(budget);
 
 const checkExpenses = function () {
   for (const entry of budget) 
@@ -46,7 +45,7 @@ const checkExpenses = function () {
 };
 checkExpenses();
 
-console.log(budget);
+
 
 const logBigExpenses = function (bigLimit) {
   let output = '';
@@ -59,4 +58,5 @@ const logBigExpenses = function (bigLimit) {
   console.log(output);
 };
 
+console.log(budget);
 logBigExpenses(1000);
