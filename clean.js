@@ -38,10 +38,13 @@ const addExpense = function (
 
   if (value <= getLimit(entry.user) ) {
 
-    return[...state]
+    return [...state, { value: -value, description ,user:cleanUser
+    }];
+  }
+  
    // budget.push({ value: -value, description ,user});
   }
-};
+
    addExpense(budget, spendingLimits, 10, 'Pizza 🍕');
    addExpense( budget, spendingLimits, 100, 'Going to movies 🍿', 'Matilda');
    addExpense(budget, spendingLimits, 200, 'Stuff', 'Jay');
