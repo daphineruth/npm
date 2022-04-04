@@ -19,7 +19,7 @@ const spendingLimits = Object.freeze( {
   matilda: 100,
 });
 
-const getLimit = user =>spendingLimits?.[user] ?? 0;
+const getLimit = (limits,user) => limits?.[user] ?? 0;
 //pure function
 const addExpense = function (
   state,
@@ -38,7 +38,7 @@ const addExpense = function (
 
   //if (value <= getLimit(entry.user) ) {
 
-    return value = getLimit(cleanUser)
+    return value = getLimit(limits, cleanUser)
      ? [...state, { value: -value, description ,user:cleanUser
     }]
     :state;
@@ -62,13 +62,10 @@ const addExpense = function (
    const newBudget3 = addExpense(budget, spendingLimits, 200, 'Stuff', 'Jay');
 
 
-const checkExpenses = function () {
-  for (const entry of budget) 
+const checkExpenses = function (state, limits) {
+  for (const entry of newBudget3) 
   
-    
-    
-
-    if (entry.value < getLimit(entry.user)) {
+    if (entry.value < getLimit(limits, entry.user)) {
       entry.flag = 'limit';
     }
   
