@@ -1,3 +1,5 @@
+ 'use strict';
+ 
  const budget = [
   { value: 250, description: 'Sold old TV 📺', user: 'daphne' },
  {value: -45, description: 'Groceries 🥑', user: 'daphne' },
@@ -49,11 +51,16 @@ checkExpenses();
 
 const logBigExpenses = function (bigLimit) {
   let output = '';
-  for (const entry of budget) {
-    if (entry.value <= -limit) {
-      output += `${entry.description.slice(-2)} + ' / '`; 
-    }
-  }
+
+  output = entry.value <= -bigLimit  ?  `${entry.description.slice(-2)} + ' / '`:''
+
+
+
+ // for (const entry of budget) {
+   // if (entry.value <= -limit) {
+    //  output += `${entry.description.slice(-2)} + ' / '`; 
+   // }
+ // }
   output = output.slice(0, -2); // Remove last '/ '
   console.log(output);
 };
