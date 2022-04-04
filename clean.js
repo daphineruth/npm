@@ -1,4 +1,7 @@
  'use strict';
+
+const { default: object } = require("lodash-es/object");
+
  
  const budget = [
   { value: 250, description: 'Sold old TV 📺', user: 'daphne' },
@@ -11,10 +14,10 @@
   { value: -1800, description: 'New Laptop 💻', user: 'daphne' },
 ];
 
-const spendingLimits = {
+const spendingLimits = object.freeze( {
   daphne: 1500,
   matilda: 100,
-};
+});
 const getLimit = user =>spendingLimits?.[user] ?? 0;
 
 const addExpense = function (value, description, user) {
