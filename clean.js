@@ -63,13 +63,17 @@ const addExpense = function (
 
 
 const checkExpenses = function (state, limits) {
-  for (const entry of newBudget3) 
+ return state.map(entry => {
+   return entry.value < getLimit(limits, entry.user) ? {...entry, flag:'limit'}
+   :entry;
+ })
+  //for (const entry of newBudget3) 
   
-    if (entry.value < getLimit(limits, entry.user)) {
-      entry.flag = 'limit';
-    }
+    //if (entry.value < getLimit(limits, entry.user)) {
+      //entry.flag = 'limit';
+    //}
   
-};
+
 checkExpenses();
 
 
@@ -92,3 +96,4 @@ const logBigExpenses = function (bigLimit) {
 
 console.log(budget);
 logBigExpenses(1000);
+}
