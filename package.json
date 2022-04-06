@@ -2,7 +2,8 @@
   "name": "modern-js-modules",
   "version": "1.0.0",
   "description": "",
-  "main": "clean.js",
+
+
   "dependencies": {
     "acorn": "^8.7.0",
     "ansi-styles": "^4.3.0",
@@ -95,7 +96,7 @@
   "devDependencies": {},
   "scripts": {
    "start":"parcel index.html",
-   "build":"parcel index.html"
+   "build":"parcel build index.html"
   },
   "repository": {
     "type": "git",
