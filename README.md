@@ -1,2 +1,2 @@
 # npm
-installing npm packages and node modules
+installing npm packages and node modules.
